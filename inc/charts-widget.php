@@ -162,4 +162,4 @@ class WP_Charts_Widget extends WP_Widget {
 
 } // End Class wp_charts_widget
 
-add_action('widgets_init', create_function('', 'return register_widget("WP_Charts_Widget");'));
+add_action('widgets_init', function() { return register_widget("WP_Charts_Widget");});
